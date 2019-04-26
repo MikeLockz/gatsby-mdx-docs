@@ -1,0 +1,116 @@
+---
+title: Flash design guidelines
+---
+
+
+# Flash design guidelines
+
+Flash banners are for delivering important messages to your users while allowing them to continue interacting with the rest of the page.
+
+*Want to build this component?* Read `[Flash` documentation](#)
+
+## When to use each variation
+
+### **Success**
+
+---
+
+When you want to let the user know that something has been successful. You may want to use a `[ToastMessage](https://consensys.github.io/rimble-ui/?path=/story/components-toastmessage--documentation)`, but `Flash` is a good option if you want your user to follow up the success with an action.
+
+**Example scenarios**
+
+**Cryptokitty received**
+
+Kitty #12345 is now yours! Want to take a look?
+
+**View Cryptokitty**
+
+### **Info**
+
+---
+
+When there's some important info in relation to the section (whole dApp, page, card etc.) in which you put the Flash banner. Or if you want to provide advice.
+
+**Example scenarios**
+
+**Now accepting DAI**
+
+You can now use DAI in our online store
+
+**Ether is booming!**
+
+ETH price surges show no sign of letting up.
+
+**See rates**
+
+### **Warning**
+
+---
+
+If there's something that might prevent a user from achieving their task.
+
+**Example scenarios**
+
+**Slow transactions expected**
+
+The network is slower than usual today, so some transactions might take longer to process
+
+### **Danger**
+
+---
+
+If there's something preventing a user from achieving key tasks, like a service outage or an incorrect network. If you want to prevent them from doing anything in these situations, used a `[Modal](https://consensys.github.io/rimble-ui/?path=/story/components-modal--documentation)`.
+
+**Example scenarios**
+
+**Switch to the Main Ethereum network**
+
+Change your network in your browser settings. You’re currently on Rinkeby.
+
+**Complete all required fields**
+
+Please fill in all fields marked with an asterisk below
+
+## Best practices
+
+### Use for persistent information
+
+Use the `Flash` banner if the information you want to get across remains relevant until a certain action has taken place, like errors in a form. Or if it is relevant for a certain time period like planned maintenance. Users will still be able to interact with the surrounding page, so if it's critical information that needs to be addressed, use a `[Modal](https://consensys.github.io/rimble-ui/?path=/story/components-modal--documentation)`.
+
+<ExampleCard variant={'positive'} /> 
+
+**Switch to the Main Ethereum network**
+
+Change your network in your browser settings. You’re currently on Rinkeby.
+
+<ExampleCard variant={'negative'} />
+
+**Connected!**
+
+Your Ethereum account is now connected to my dApp.
+
+### **Stick to one call to action**
+
+Flash banners should have a single purpose or message so should only contain a maximum of one call to action. Multiple messages in a banner will both cause confusion and add unnecessary word count. It's better to separate them into two banners if you need to say two things and let the user address them separately.
+
+<ExampleCard variant={'positive'} /> 
+
+**No funds for transactions fees**
+
+You won't be able to use our blockchain features without some Ether in your account. **Learn how to add funds**
+
+<ExampleCard variant={'negative'} /> 
+
+**Wrong network and insufficient funds!**
+
+You need to be on the Main Ethereum network to use this dApp. **Learn how to switch networks**
+
+You also won't be able to use our blockchain features without some Ether in your account. **Learn how to add funds**
+
+---
+
+# **Are we missing anything?**
+
+If you have any extra insight you'd like to add, please raise an issue in Github.
+
+**[Contribute](https://github.com/ConsenSys/rimble-ui/issues)**

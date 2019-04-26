@@ -6,62 +6,86 @@ export const frontmatter = {
     }
 }
 
-# Getting started
+# Welcome to Rimble
 
-The fastest way to get started with Gatsby+MDX is to use the [MDX
-starter](https://github.com/ChristopherBiscardi/gatsby-starter-mdx-basic). This
-allows you to write .mdx files in `src/pages` to create new pages on
-your site. 
+### Rimble is a set of adaptable components and design standards to help you get your decentralized application (dApps) off the ground, fast.
 
-## 🚀 Quick start
+Within you'll find documentation and design guidelines for most standard UI components plus some that are more specific to decentralized products. Your tech stack and workflow are yours to decide. We impose as few constraints as possible.
 
-1.  **Create a Gatsby MDX site.**
+---
 
-1. **Initialize the MDX starter** with the Gatsby CLI
+## dApp components
 
-    ```sh
-    npx gatsby new my-mdx-starter https://github.com/ChristopherBiscardi/gatsby-starter-mdx-basic
-    ```
+Components you'll find useful for blockchain-related actions
 
-1. **Run the dev server** by changing directory to the scaffolded site and install dependencies
+**[MetaMask button](https://consensys.github.io/rimble-ui/?path=/story/components-metamaskbutton--documentation)** – Let users know they can connect with MetaMask
 
-    ```sh
-    cd my-mdx-starter/
-    npm install
-    gatsby develop
-    ```
+**[Blockie](https://consensys.github.io/rimble-ui/?path=/story/components-blockie--documentation)** – Render Ethereum public addresses as blockies
 
-1. **Open the site** running at http://localhost:8000!
+**[uPort button](https://consensys.github.io/rimble-ui/?path=/story/components-uportbutton--documentation)** – Let users know they can connect with uPort
 
-1. **Update the MDX content** by opening the `my-mdx-starter` directory
-    in your code editor of choice and edit `src/pages/index.mdx`.
-    Save your changes and the browser will update in real time!
+**[Public address output](https://consensys.github.io/rimble-ui/?path=/story/components-publicaddress--documentation)** – Show addresses with copy-to-clipboard functionality
 
-## Add MDX to an existing Gatsby site
+**[QR Code](https://consensys.github.io/rimble-ui/?path=/story/components-qr-code--documentation)** – Render Ethereum public addresses as QR codes
 
-If you already have a Gatsby site that you'd like to add MDX to, you
-can follow these steps:
+**[ToastMessage Provider](https://consensys.github.io/rimble-ui/?path=/story/components-toastmessage--documentation)** – Keep users in the loop about their transactions
 
-1. **Add `gatsby-mdx`** and MDX as dependencies
+## **dApp patterns**
 
-    ```sh
-    yarn add gatsby-mdx @mdx-js/mdx @mdx-js/tag
-    ```
+Guides to creating smooth experiences in your dApp
 
-1. **Update your `gatsby-config.js`** to use the `gatsby-mdx` plugin
+**[Transaction states](https://consensys.github.io/rimble-ui/?path=/story/dapp-patterns--transaction-states)** – Design transaction state updates that instil confidence in your dApp
 
-    ```js
-    module.exports = {
-      plugins: [
-        // ....
-        `gatsby-mdx`
-      ]
-    }
-    ```
+---
 
-1. **Restart `gatsby develop`** and add an `.mdx` page to `src/pages`
+## Contribute to Rimble
 
-## What's next?
+We're completely open source so feel free to raise any issues or suggest improvements to Rimble.
 
-Go check out the [guides](/guides) to find out what else you can do
-with Gatsby and MDX! 
+[[Contribute]](https://github.com/ConsenSys/rimble-ui/blob/master/docs/CONTRIBUTIONS.md)
+
+## Changelog
+
+0.6
+
+- Tables
+- Bug fixes
+
+0.5
+
+- Better form validation
+- uPort connect button
+- Upgraded to Storybook 5
+- Bug fixes
+
+0.4
+
+- Toast Messages and Toast Message provider
+- QR code
+- Modal
+- Pills
+- Expanded test coverage
+- 
+
+0.3
+
+- Styling cleanup for lots of components
+- Bug fixes
+
+0.2
+
+- PublicAddress component
+- MetaMask buttons and more button variants
+- Basic layout components
+- Cards
+- Loaders
+
+0.1
+
+- Theming
+- Buttons and other simple components
+- Blockies
+
+---
+
+[New home](./New-home-4c42ec78-1515-453a-88fc-afadf30b88e7.md)

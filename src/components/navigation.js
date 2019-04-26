@@ -55,10 +55,7 @@ export const Navigation = () => (
           )
         )}
         <li>
-          <a
-            css={linkStyles}
-            href="https://github.com/ChristopherBiscardi/gatsby-mdx"
-          >
+          <a css={linkStyles} href="https://github.com/ConsenSys/rimble-ui">
             GitHub
           </a>
         </li>

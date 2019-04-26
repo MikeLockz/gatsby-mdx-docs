@@ -9,6 +9,8 @@
     "@emotion/core": "^10.0.5",
     "@mdx-js/mdx": "^1.0.0-alpha.17",
     "@mdx-js/react": "^1.0.0-alpha.17",
+    "@rimble/connection-banner": "^0.0.1-alpha.0",
+    "@rimble/network-indicator": "^0.0.1-alpha.0",
     "emotion-theming": "^10.0.5",
     "gatsby": "2.3.14",
     "gatsby-mdx": "*",

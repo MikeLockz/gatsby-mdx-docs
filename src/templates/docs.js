@@ -107,6 +107,7 @@ const DocLayout = ({ children, ...props }) =>
             >
               <Link
                 to={`${site.siteMetadata.docsLocation}`}
+                target="_blank"
                 css={{
                   textDecoration: "none",
                   color: "#555",

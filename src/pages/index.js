@@ -3,6 +3,7 @@ import { Backpack } from "react-kawaii";
 import { useRef, useState, useEffect } from "react";
 import { color } from "../components/color";
 import { Navigation } from "../components/navigation";
+import { Button, Link } from "rimble-ui";
 
 import WhatIsGatsby from "../homepage-sections/what-is-gatsby.mdx";
 import WhatIsMDX from "../homepage-sections/what-is-mdx.mdx";
@@ -47,26 +48,10 @@ const GetStarted = () => {
         marginTop: "1rem"
       }}
     >
-      <Backpack
-        size={120}
-        mood={isHovered ? "excited" : "happy"}
-        color={color.mdx}
-      />
-      <div css={{ marginLeft: "2rem" }}>
-        <a
-          href="/getting-started"
-          ref={hoverRef}
-          css={{
-            cursor: "pointer",
-            padding: ".5rem .75rem",
-            border: `3px solid ${color.gatsby}`,
-            color: color.white,
-            textDecoration: "none",
-            "&:hover": { background: color.gatsby }
-          }}
-        >
+      <div css={{}}>
+        <Button as={Link} href="/getting-started">
           Get Started
-        </a>
+        </Button>
       </div>
     </div>
   );
@@ -76,35 +61,38 @@ const HomePage = () => {
   return (
     <div
       css={{
-        color: color.white
+        color: color.dark
       }}
     >
       <Navigation />
       <div
         css={{
-          //          background: color.gatsby,
-          background: `linear-gradient(45deg, ${color.gatsby} 0%,${
-            color.mdx
-          } 100%)`,
-          padding: "8rem 4rem",
-          textAlign: "center",
-          textShadow: `0px 0px 2px ${color.dark}`
+          padding: "20rem 4rem",
+          textAlign: "center"
         }}
       >
-        <h1>Rimble</h1>
-        <h2>Great dApp UX</h2>
+        <h1>RIMBLE</h1>
+        <h2>dApp UX Resources</h2>
         <GetStarted />
       </div>
       <Section bgColor={color.white} color={color.dark}>
         <div css={{ flex: 1, padding: "0 1rem" }}>
-          <WhatIsGatsby location={{ pathname: "/" }} />
+          {/* <WhatIsGatsby location={{ pathname: "/" }} /> */}
+          <h3>Design Guidelines</h3>
         </div>
         <div css={{ flex: 1, padding: "0 1rem" }}>
-          <WhatIsMDX location={{ pathname: "/" }} />
+          {/* <WhatIsMDX location={{ pathname: "/" }} /> */}
+          <h3>React Components</h3>
         </div>
       </Section>
       <Section bgColor={color.dark} color={color.white}>
-        <WhatCanIDo location={{ pathname: "/" }} />
+        {/* <WhatCanIDo location={{ pathname: "/" }} /> */}
+        <div>
+          <h3>Recent Updates</h3>
+          <h4>0.6</h4>- Tables - Bug fixes
+          <h4>0.5</h4>- Better form validation - uPort connect button - Upgraded
+          to Storybook 5 - Bug fixes
+        </div>
       </Section>
     </div>
   );
@@ -114,7 +102,6 @@ const Section = ({ children, bgColor, color }) => (
   <div
     css={{
       background: bgColor,
-      minHeight: "600px",
       color,
       paddingTop: "2rem",
       paddingBottom: "2rem"

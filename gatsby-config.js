@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `gatsby-mdx docs`,
     description: `gatsby-mdx documentation`,
-    docsLocation: `https://github.com/ChristopherBiscardi/gatsby-mdx/tree/master/examples/docs/`
+    docsLocation: `https://github.com/ConsenSys/rimble-ui/issues`
   },
   plugins: [
     `gatsby-plugin-sharp`,
