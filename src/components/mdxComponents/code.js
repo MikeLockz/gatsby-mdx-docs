@@ -3,14 +3,19 @@ import Highlight, { defaultProps } from "prism-react-renderer";
 import codeTheme from "prism-react-renderer/themes/duotoneLight";
 import { withTheme } from "emotion-theming";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import { Button, Flash } from "rimble-ui";
+import ConnectionBanner from "@rimble/connection-banner";
+
+const localScope = { Button, Flash, ConnectionBanner };
 
 const prismMap = {
   sh: "bash",
   shell: "bash"
 };
-export default withTheme(({ theme, is, children, lang = "markup" }) => {
+export default withTheme(({ theme, is, children, lang = "markdown" }) => {
   // if no `is` default to inline code
   if (!is) {
+    console.log("!is", is);
     return (
       <Highlight
         {...defaultProps}
@@ -33,8 +38,9 @@ export default withTheme(({ theme, is, children, lang = "markup" }) => {
 
   // live component rendering
   if (is === "react-live") {
+    console.log("scope", localScope);
     return (
-      <LiveProvider code={children}>
+      <LiveProvider code={children} scope={localScope}>
         <LiveEditor />
         <LiveError />
         <LivePreview />
@@ -42,6 +48,7 @@ export default withTheme(({ theme, is, children, lang = "markup" }) => {
     );
   }
 
+  console.log("default render", is === "react-live");
   // otherwise, use prism to render a code block
   return (
     <Highlight

@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "../heading";
 import Code from "./code";
 import { P } from "./p";
+import { Button } from "rimble-ui";
 
 /* eslint-disable react/display-name */
 export default {
