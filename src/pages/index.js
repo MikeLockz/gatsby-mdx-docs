@@ -46,7 +46,7 @@ const Masthead = styled(Flex)`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom right;
-  background-image: url("/static/svg/fig-bg.svg") ${backgroundImage};
+  ${backgroundImage};
 `;
 
 const exampleCode = `
