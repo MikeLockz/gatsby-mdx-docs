@@ -7,6 +7,7 @@ import ChevronSvg from "./chevron-svg";
 import ScrollPositionProvider, {
   ScrollPositionConsumer
 } from "./scrollbar-position-provider";
+import { Box } from "rimble-ui";
 
 class StickyResponsiveSidebar extends Component {
   constructor(props) {
@@ -128,10 +129,11 @@ const styles = {
     [presets.Tablet]: {
       transform: `none !important`,
       boxShadow: `none`
-    }
+    },
+    marginTop: `0rem`
   },
   sidebarToggleButton: {
-    backgroundColor: "#1fa9f4",
+    backgroundColor: "#5436D6",
     borderRadius: `50%`,
     bottom: 64,
     boxShadow: `0 0 20px rgba(0, 0, 0, 0.3)`,

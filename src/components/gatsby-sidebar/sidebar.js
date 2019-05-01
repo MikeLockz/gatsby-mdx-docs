@@ -202,10 +202,10 @@ class SidebarBody extends Component {
       >
         {!itemList[0].disableExpandAll && (
           <header css={{ ...styles.utils }}>
-            <ExpandAllButton
+            {/* <ExpandAllButton
               onClick={this._expandAll}
               expandAll={this.state.expandAll}
-            />
+            /> */}
           </header>
         )}
         <nav

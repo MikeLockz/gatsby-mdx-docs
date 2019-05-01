@@ -72,17 +72,17 @@ const styles = {
   },
   parentOfActiveLink: {
     "&&": {
-      color: "#1fa9f4",
+      color: "#5436D6",
       fontWeight: `bold`
     }
   },
   activeLink: {
     "&&": {
-      color: "#1fa9f4",
+      color: "#5436D6",
       fontWeight: `bold`
     },
     "&:before": {
-      background: "#1fa9f4",
+      background: "#5436D6",
       transform: `scale(1)`
     },
     "&:after": {
@@ -104,9 +104,9 @@ const styles = {
       fontWeight: `normal`,
       "&:hover": {
         background: `transparent`,
-        color: "#1fa9f4",
+        color: "#5436D6",
         "&:before": {
-          background: "#1fa9f4",
+          background: "#5436D6",
           transform: `scale(1)`
         }
       }
@@ -127,7 +127,7 @@ const styles = {
       }
     },
     "&:after": {
-      background: "#1fa9f4",
+      background: "#5436D6",
       borderRadius: 4,
       content: `''`,
       left: bulletOffset.default.left + 7,

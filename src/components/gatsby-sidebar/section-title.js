@@ -107,7 +107,7 @@ const SplitButton = ({
             ? {
                 "&&": {
                   ...styles.smallCaps,
-                  color: isExpanded ? "#1fa9f4" : false,
+                  color: isExpanded ? "#5436D6" : false,
                   fontWeight: isActive ? `bold` : `normal`
                 }
               }
@@ -162,9 +162,9 @@ const SectionTitle = ({ children, isExpanded, isActive, disabled, level }) => (
       fontWeight: isActive ? `bold` : `normal`,
       margin: 0,
       ...(level === 0 && { ...styles.smallCaps }),
-      color: isExpanded ? "#1fa9f4" : false,
+      color: isExpanded ? "#5436D6" : false,
       "&:hover": {
-        color: disabled ? false : "#1fa9f4"
+        color: disabled ? false : "#5436D6"
       }
     }}
   >
