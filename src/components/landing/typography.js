@@ -1,8 +1,8 @@
-import { createGlobalStyle } from 'styled-components'
-import theme from './theme'
+import { createGlobalStyle } from "styled-components";
+import theme from "./theme";
 
 const globalStyle = createGlobalStyle`
-  @import url('./static/inter-ui-web/inter-ui.css');
+  /* @import url('./static/inter-ui-web/inter-ui.css'); */
 
   :root {
     font-family:
@@ -14,7 +14,7 @@ const globalStyle = createGlobalStyle`
   }
 
   body {
-    color: ${theme.colors['dark-grey']};
+    color: ${theme.colors["dark-grey"]};
     font-size: 1rem;
   }
 
@@ -32,6 +32,6 @@ const globalStyle = createGlobalStyle`
     overflow-x: hidden;
     overflow-y: auto;
   }
-`
+`;
 
-export default globalStyle
+export default globalStyle;
