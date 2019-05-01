@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import theme from "./theme";
 
 const globalStyle = createGlobalStyle`
-  /* @import url('./static/inter-ui-web/inter-ui.css'); */
+  @import url('./static/inter-ui-web/inter-ui.css');
 
   :root {
     font-family:
