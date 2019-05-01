@@ -105,18 +105,16 @@ class Menu extends Component {
               </Text>
             </li>
             <li>
-              <RimbleLink
+              <a
                 href="//github.com/ConsenSys/rimble-ui"
                 target="_blank"
                 rel="noopener"
               >
                 Github
-              </RimbleLink>
+              </a>
             </li>
             <li>
-              <Link to="/api-reference">
-                <RimbleLink>Documentation</RimbleLink>
-              </Link>
+              <Link to="/api-reference">Documentation</Link>
             </li>
           </ul>
         </StyledList>
