@@ -46,7 +46,7 @@ const Masthead = styled(Flex)`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom right;
-  background-image: url("/svg/fig-bg.svg") ${backgroundImage};
+  background-image: url("/static/svg/fig-bg.svg") ${backgroundImage};
 `;
 
 const exampleCode = `
@@ -72,7 +72,7 @@ const HomePage = () => (
 
       <Nav />
       <main role="main">
-        <Masthead backgroundImage={["none", "none", 'url("/svg/fig-bg.svg")']}>
+        <Masthead backgroundImage={["none", "none", 'url("/static/svg/fig-bg.svg")']}>
           <Container>
             <Header />
           </Container>
@@ -94,7 +94,7 @@ const HomePage = () => (
               <Flex mt={4} width={1} flexDirection={["column", "row"]}>
                 <Box flex={"1 1 auto"} width={[1, 1 / 3]} mr={5}>
                   <Flex my={3}>
-                    <ReactSVG src="/svg/fig-1.svg" />
+                    <ReactSVG src="/static/svg/fig-1.svg" />
                   </Flex>
                   <Heading.h2 fontSize={[2, 3]} fontWeight={1}>
                     Flexible
@@ -106,7 +106,7 @@ const HomePage = () => (
                 </Box>
                 <Box flex={"1 1 auto"} width={[1, 1 / 3]} mr={5}>
                   <Flex my={3}>
-                    <ReactSVG src="/svg/fig-2.svg" />
+                    <ReactSVG src="/static/svg/fig-2.svg" />
                   </Flex>
                   <Heading.h2 fontSize={[2, 3]} fontWeight={1}>
                     Research-driven
@@ -119,7 +119,7 @@ const HomePage = () => (
                 </Box>
                 <Box flex={"1 1 auto"} width={[1, 1 / 3]}>
                   <Flex my={3}>
-                    <ReactSVG src="/svg/fig-3.svg" />
+                    <ReactSVG src="/static/svg/fig-3.svg" />
                   </Flex>
                   <Heading.h2 fontSize={[2, 3]} fontWeight={1}>
                     Human
