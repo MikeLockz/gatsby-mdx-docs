@@ -72,7 +72,9 @@ const HomePage = () => (
 
       <Nav />
       <main role="main">
-        <Masthead backgroundImage={["none", "none", 'url("/static/svg/fig-bg.svg")']}>
+        <Masthead
+          backgroundImage={["none", "none", 'url("/static/svg/fig-bg.svg")']}
+        >
           <Container>
             <Header />
           </Container>
